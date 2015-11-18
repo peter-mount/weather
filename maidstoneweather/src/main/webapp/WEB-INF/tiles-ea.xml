@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<!--
+    Environment Agency specific tiles
+-->
+<tiles-definitions>
+    
+    <!-- Flood Alert Widgets-->
+    <definition name="ea.floodalert.se" template="/common/environmentagency/flood_widget_se.jsp"/>
+    <definition name="ea.floodalert.uk" template="/common/environmentagency/flood_widget_uk.jsp"/>
+    
+</tiles-definitions>

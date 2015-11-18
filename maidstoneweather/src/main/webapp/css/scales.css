@@ -1,0 +1,61 @@
+/* Temperature colours
+
+ The number is the lower temperature, so:
+ Suffix Range in Celsius
+ --14    -14C or colder
+ --12    -14C to -12C
+ --2     -2C to 0C
+ -0      0C
+ ..
+  -38    38C or hotter
+*/
+.temp-key--14 {background-color: rgb(75, 0, 30);}
+.temp-key--12 {background-color: rgb(50, 0, 127);}
+.temp-key--10 {background-color: rgb(0, 0, 130);}
+.temp-key--8 {background-color: rgb(0, 51, 180);}
+.temp-key--6 {background-color: rgb(0, 0, 255);}
+.temp-key--4 {background-color: rgb(0, 126, 255);}
+.temp-key--2 {background-color: rgb(0, 190, 255);}
+.temp-key-0 {background-color: rgb(24, 215, 140);}
+.temp-key-2 {background-color: rgb(58, 174, 116);}
+.temp-key-4 {background-color: rgb(43, 170, 43);}
+.temp-key-6 {background-color: rgb(43, 200, 43);}
+.temp-key-8 {background-color: rgb(0, 255, 50);}
+.temp-key-10 {background-color: rgb(84, 255, 0);}
+.temp-key-12 {background-color: rgb(160, 255, 0);}
+.temp-key-14 {background-color: rgb(255, 255, 0);}
+.temp-key-16 {background-color: rgb(255, 204, 0);}
+.temp-key-18 {background-color: rgb(255, 153, 0);}
+.temp-key-20 {background-color: rgb(255, 102, 0);}
+.temp-key-22 {background-color: rgb(255, 85, 0);}
+.temp-key-24 {background-color: rgb(255, 0, 0);}
+.temp-key-26 {background-color: rgb(255, 0, 128);}
+.temp-key-28 {background-color: rgb(255, 35, 145);}
+.temp-key-30 {background-color: rgb(255, 95, 178);}
+.temp-key-32 {background-color: rgb(255, 135, 195);}
+.temp-key-34 {background-color: rgb(255, 175, 215);}
+.temp-key-36 {background-color: rgb(255, 215, 235);}
+.temp-key-38 {background-color: rgb(255, 255, 255);}
+
+/* Rain fall key
+
+ The number is the lower limit, so:
+  Num   Range in mm
+    0   0.01-0.5
+    0_5 0.5 to 1
+    1   1-2
+    2   2-4
+    4   4-8
+    8   8-16
+    16  16-32
+    32  32+
+*/
+.rain-key-0 {background-color: rgb(4, 4, 251);}
+.rain-key-0_5 {background-color: rgb(51, 102, 252);}
+.rain-key-1 {background-color: rgb(128, 128, 3);}
+.rain-key-2 {background-color: rgb(251, 202, 4);}
+.rain-key-4 {background-color: rgb(252, 152, 4);}
+.rain-key-8 {background-color: rgb(251, 4, 4);}
+.rain-key-16 {background-color: rgb(251, 4, 252);}
+.rain-key-32 {background-color: rgb(226, 252, 252);}
+

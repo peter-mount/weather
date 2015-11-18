@@ -1,0 +1,142 @@
+/* Symbols.js css */
+
+.symbol-header, .symbol-box {
+    border: 1px solid #aaaaaa;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.symbol-header {
+    background: #cccccc;
+    margin:0;
+    padding: .2em;
+}
+
+.symbol-area, .symbol-box {
+    margin:.1em;
+    padding: .2em;
+}
+
+.symbol-panel {
+    margin:0;
+    margin-top:.2em;
+}
+
+.symbol-row {
+    margin-top:.2em;
+}
+
+.symbol-panel .symbol-outer {
+    float:left;
+}
+
+.symbol-outer {
+    margin-top:.2em;
+}
+
+.symbol-outer h2 {
+    text-align: center;
+    display: block;
+    margin:0;
+    padding:1px;
+}
+
+.symbol-outer h3 {
+    text-align: center;
+    display: block;
+    margin:0;
+    padding:1px;
+    font-size: 12px;
+}
+
+.symbol-outer .symbol-box {
+    height: 250px;
+    max-height: 250px;
+}
+.symbol-inner {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.symbol-inner div {padding:1px;}
+
+.symbol-label {
+    font-size:12px;
+    text-align:center;
+}
+
+.symbol-box table {font-size: 12px;}
+.symbol-box th {text-align:right;}
+.symbol-box td {text-align:left;}
+
+/* Recommended sizes for each symbol */
+
+.symbol-amp {
+    display:block;
+    width:120px;
+    height:70px;
+}
+
+.symbol-camera {
+    display:block;
+    width:102px;
+    height:100px;
+}
+.symbol-camera img {
+    display: block;
+    width: 100px;
+    height: 75px;
+    border: 1px solid black;
+}
+.symbol-camera div {
+    font-size:12px;
+    text-align:center;
+}
+
+.symbol-cloud {
+    display:inline-block;
+    width:100px;
+    height:200px;
+}
+
+.symbol-compass {
+    display:block;
+    width:130px;
+    height:130px;
+}
+
+.symbol-dial,.symbol-dial-block {
+    width:120px;
+    height:120px;
+}
+
+.symbol-dial-small,.symbol-dial-small-block {
+    width:80px;
+    height:80px;
+}
+
+.symbol-dial, .symbol-dial-small {display:inlineblock;}
+.symbol-dial-block, .symbol-dial-small-block {display:block;}
+
+.symbol-rain {
+    display:inline-block;
+    vertical-align: top;
+    width:80px;
+    height:200px;
+}
+
+.symbol-uv, .symbol-uv-block {
+    width:80px;
+    height:60px;
+}
+.symbol-uv {display:inline-block;}
+.symbol-uv-block {display:block;}
+
+.symbol-wind, .symbol-wind-block {
+    width:80px;
+    height:80px;
+}
+.symbol-wind {display:inline-block;}
+.symbol-wind-block {display:block;}

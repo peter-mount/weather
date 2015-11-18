@@ -1,0 +1,147 @@
+
+#map-outer {
+    display: table;
+    table-layout: auto;
+}
+
+#map-top ,#map-inner {
+    display: table-row;
+}
+
+#map-top-left, #map-menu {
+    display: table-cell;
+    background: #fff;
+    width: 10em;
+    overflow: hidden;
+    padding: 2px;
+    margin: 1px;
+}
+#map-menu .map-pane {
+    font-size: 0.8em;
+}
+
+#map-zoom-info {
+    float: left;
+    padding-left: 1px;
+    padding-top: 1em;
+    color: black;
+    line-height: 1.1;
+    font-size: 11px;
+    text-shadow: 1px 1px 1px #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    white-space: nowrap;
+    overflow: hidden;
+}
+#map-presets-select {
+    display: block;
+    width: 100%;
+}
+#map-zoom-scale {
+    padding-left: 2px;
+}
+
+#map-base-layers ul, #map-observation-layers ul, #map-forecast-layers ul, #map-aux-layers ul {
+    list-style: none;
+    -webkit-margin-after:0;
+    -webkit-margin-before: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+#map-top-main {
+    display: table-cell;
+    margin: 1px;
+    padding: 5px;
+    border: 1px solid black;
+}
+/*
+#map-zoom-level div {
+    width: 18px;
+    height: 18px;
+}
+*/
+
+#map {
+    display: table-cell;
+    margin: 1px;
+    padding: 5px;
+    border: 1px solid black;
+    width: 720px;
+    height: 500px;
+}
+
+#map-time {
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+#map-time-shown {
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+#map-time-slider {
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+#map-time-range {
+    width: 20em;
+}
+
+/* ********************************************************************** */
+
+/* Stuff to hide */
+#OpenLayers_Control_Attribution_7 {
+    display: none;
+}
+
+#OpenLayers_Control_Zoom_5 {
+    position: relative;
+}
+
+/* ********************************************************************** */
+/* general toolbar styles */
+
+.leaflet-bar {
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    border-bottom: 1px solid #888;
+}
+.leaflet-bar-part {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #aaa;
+}
+.leaflet-bar-part-top {
+}
+.leaflet-bar-part-bottom {
+    border-bottom: none;
+}
+
+.leaflet-touch .leaflet-bar {
+}
+.leaflet-touch .leaflet-bar-part {
+    border-bottom: 4px solid rgba(0,0,0,0.3);
+}
+.leaflet-touch .leaflet-bar-part-top {
+}
+.leaflet-touch .leaflet-bar-part-bottom {
+    border-bottom: none;
+}
+
+
+/* Group controls */
+
+.leaflet-control-layers-group-name {
+    font-weight: bold;
+    margin-bottom: .2em;
+    display: block;
+}
+
+.leaflet-control-layers-group {
+    margin-bottom: .5em;
+}
+
+.leaflet-control-layers-group label {
+    padding-left: .5em;
+}

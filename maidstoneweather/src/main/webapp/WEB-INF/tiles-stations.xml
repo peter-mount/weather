@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<!--
+    Weather Station tiles - most of these are named after the specific hosts
+-->
+<tiles-definitions>
+    
+    <!-- The homepage overview tile -->
+    <definition name="weather.current" template="/common/stations/current.jsp">
+        <put-attribute name="weather.helene" value="weather.helene" />
+        <put-attribute name="weather.kari" value="weather.kari" />
+        <put-attribute name="weather.kell" value="weather.kell" />
+    </definition>
+
+    <!-- The station current info tile for /station/info/* servlet -->
+    <definition name="weather.current.info" template="/common/stations/current_info.jsp"/>
+    
+    <!-- kell - the Mark I pywws based station -->
+    <definition name="weather.kell"
+                template="/common/stations/current_info.jsp"
+                preparer="com.maidstoneweather.StationInfoPreparer"
+    >
+        <put-attribute name="station" value="kell" />
+    </definition>
+    
+    <!-- Helene - the Mark II in Sky Camera configuration -->
+    <definition name="weather.helene"
+                template="/common/stations/current_info.jsp"
+                preparer="com.maidstoneweather.StationInfoPreparer"
+    >
+        <put-attribute name="station" value="helene" />
+    </definition>
+    
+    <!-- Kari - the Mark II in Webcam configuration -->
+    <definition name="weather.kari"
+                template="/common/stations/current_info.jsp"
+                preparer="com.maidstoneweather.StationInfoPreparer"
+    >
+        <put-attribute name="station" value="kari" />
+    </definition>
+    
+</tiles-definitions>

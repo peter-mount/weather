@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    
+    <!-- Main layout -->
+    <definition name="layout.main" template="/common/layout/main.jsp">
+        <put-attribute name="title" value="Maidstone Weather" />
+        <put-attribute name="javascript" value="/common/jquery.jsp" />
+        <put-attribute name="topmenu" value="/common/navbar.jsp" />
+        <put-attribute name="menu" value="/common/blank.jsp" />
+        <!--
+        <put-attribute name="javascript" value="" />
+        <put-attribute name="header" value="layout.header" />
+        <put-attribute name="topmenu" value="layout.topmenu" />
+        <put-attribute name="menu" value="/common/navbar.jsp" />
+        -->
+        <!--put-attribute name="body" value="/common/blank.jsp" /-->
+        <put-attribute name="footer" value="layout.footer" />
+    </definition>
+    
+    <!-- Top menu
+    <definition name="layout.topmenu" template="/common/layout/topmenu/topmenu.jsp">
+        <put-attribute name="topmenu.left" value="/common/layout/topmenu/topmenu_left.jsp" />
+        <put-attribute name="topmenu.right" value="/common/layout/topmenu/topmenu_right.jsp" />
+    </definition>
+    -->
+    
+    <!-- Main header
+    <definition name="layout.header" template="/common/layout/header/header.jsp">
+        <put-attribute name="header.left" value="/common/layout/header/header_left.jsp" />
+        <put-attribute name="header.center" value="/common/layout/header/header_center.jsp" />
+        <put-attribute name="header.right" value="/common/user/login/detailsPanel.jsp" />
+    </definition>
+    -->
+    
+    <!-- Main footer -->
+    <definition name="layout.footer" template="/common/layout/footer/footer.jsp">
+        <put-attribute name="footer.left" value="/common/layout/footer/footer_left.jsp" />
+        <put-attribute name="footer.center" value="/common/layout/footer/footer_center.jsp" />
+        <put-attribute name="footer.right" value="/common/layout/footer/footer_right.jsp" />
+    </definition>
+    
+    <!-- Main home page -->
+    <definition name="homepage" extends="layout.main">
+        <put-attribute name="title" value="Maidstone Weather" />
+        <put-attribute name="body" value=".homepage" />
+        <put-attribute name="javascript" value="/common/jquery_flot.jsp" />
+    </definition>
+    <definition name=".homepage" template="/common/homepage.jsp">
+        <put-attribute name="abstract" value="/common/about_abstract.jsp" />
+        <put-attribute name="forecast" value="/common/modp/forecast_headline.jsp" />
+        <put-attribute name="current" value="/common/sensor/current.jsp" />
+        <put-attribute name="sunrise" value="/common/space/sunrise/small.jsp" />
+        <put-attribute name="flood-alert" value="ea.floodalert.se" />
+    </definition>
+    
+    <!-- About page -->
+    <definition name="about" extends="layout.main">
+        <put-attribute name="title" value="About Maidstone Weather" />
+        <put-attribute name="abstract" value="/common/about_abstract.jsp" />
+        <put-attribute name="body" value="/common/about.jsp" />
+    </definition>
+    
+    <!-- graphs page -->
+    <definition name="graphs" extends="layout.main">
+        <put-attribute name="title" value="Maidstone Weather Graphs" />
+        <put-attribute name="body" value="/common/graph/graphs.jsp" />
+    </definition>
+    
+    <!-- graphs page -->
+    <definition name="webcam" extends="layout.main">
+        <put-attribute name="title" value="Maidstone Weather Webcams" />
+        <put-attribute name="body" value=".webcam" />
+    </definition>
+    <definition name=".webcam" template="/common/webcam/home.jsp">
+        <put-attribute name="abstract" value="/common/about_abstract.jsp" />
+        <put-attribute name="webcam" value="/common/webcam/webcam.jsp" />
+    </definition>
+    
+    <!-- FAQ -->
+    <definition name="faq.home" extends="layout.main">
+        <put-attribute name="title" value="Frequently Asked Questions" />
+        <put-attribute name="body" value="/common/faq/faq.jsp" />
+    </definition>
+    
+</tiles-definitions>

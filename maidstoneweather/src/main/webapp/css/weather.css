@@ -1,0 +1,260 @@
+h1 {
+    font-size: 1.4em;
+}
+h2 {
+    font-size: 1.2em;
+}
+h3 {
+    font-size: 1em;
+}
+
+/* Main Header */
+
+#main-header-outer {
+    display: table;
+    table-layout: auto;
+    width: 100%;
+}
+
+#main-header-inner {
+    display: table-row;
+    width: 100%;
+    height: 80px;
+    font-family: Arial,sans-serif;
+    font-size: 1.0em;
+    font-style: normal;
+}
+
+#main-header-left {
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+
+#main-header-left img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#main-header-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+}
+
+#main-header-right {
+    display: table-cell;
+    text-align: right;
+    vertical-align: top;
+}
+
+/* Login panel */
+
+#loginPanel {
+    font-family: Arial,sans-serif;
+    font-size: 0.6em;
+    font-style: normal;
+}
+
+#loginPanel input {font-size: 1em;}
+
+#login_page {
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#login_right {margin-top: 2em;}
+
+#home-outer {
+    display: table;
+    table-layout: auto;
+    width: 100%;
+    margin-top: 0.25em;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#home-inner {
+    display: table-row;
+    width: 100%;
+    font-family: Arial,sans-serif;
+    font-size: 1.0em;
+    font-style: normal;
+}
+
+#home-left {
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+
+#home-center {
+    display: table-cell;
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+}
+
+#home-right {
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+    padding-left: .2em;
+}
+
+/* i icon, use in a span */
+.info {
+    font-family: monospace;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: bolder;
+    width: 1em;
+    text-align: center;
+    color: #fff;
+    background: #00f;
+    padding: 0;
+    margin: 1px;
+    vertical-align: middle;
+    border: 1px solid #00f;
+    -webkit-border-radius: 4px 4px 4px 4px;
+}
+
+/* Station Current Weather */
+
+.station-current .info {
+        font-size: 0.8em;
+}
+
+div.station-current {
+    margin: 1px;
+    width: 220px;
+    border: 1px solid black;
+    font-family: Arial,sans-serif;
+    font-size: 1em;
+    font-style: normal;
+}
+
+/* Removes extra border */
+div.station-current div,
+table.station-current {
+    border: 0;
+}
+
+table.station-current td {
+    display: table-cell;
+    vertical-align: top;
+}
+
+table.station-current th {
+    font-size: 0.8em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+table.station-current th.station-name {
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+td.station-sensor-name {text-align: right;}
+td.station-sensor-value {text-align: left;}
+
+/* Webcam images for stations with cameras */
+.webcam-group {
+    text-align: center;
+}
+
+.webcam-preview {
+    display: inline-block;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: normal;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.webcam-preview img, .webcam-preview span {
+    display: block;
+    text-align: center;
+}
+.webcam-preview img {
+    border: 1px solid black;
+    width: 100px;
+    height: 75px;
+}
+
+.webcam-preview img, .webcam-preview span {
+    font-size: 0.8em;
+}
+
+/* Sensor values */
+.station-sensors {
+    display: table;
+    table-layout: auto;
+    margin: 1px;
+}
+
+.station-sensor {
+    display: table-row;
+}
+
+.station-sensor-name, .station-sensor-value,
+.station-sensor-value-l ,
+.station-sensor-value-c ,
+.station-sensor-value-r,
+.station-sensor-value-u {
+    display: table-cell;
+    font-family: monospace;
+    font-size: 1em;
+    font-style: normal;
+    text-wrap: none;
+}
+.station-sensor-name {
+    text-align: right;
+    padding-right: 4px;
+    font-size: 0.8em;
+}
+.station-sensor-value {
+    text-align: left;
+    padding-left: 4px;
+    font-size: 0.8em;
+}
+.station-sensor-value-l {
+    text-align: right;
+    padding-left: 4px;
+    font-size: 0.8em;
+}
+.station-sensor-value-c {
+    width: 0.1em;
+    font-size: 0.8em;
+}
+.station-sensor-value-r,.station-sensor-value-u {
+    text-align: left;
+    font-size: 0.8em;
+}
+
+#fcst-tabs div.ui-tabs-panel {
+    height: 6em;
+    max-height: 6em;
+    overflow-y: auto;
+    margin-top: 2px;
+}
+
+#fcst-tabs div.ui-tabs-panel h3 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0.4em;
+}
+
+.weather-plot-small {
+    height: 150px;
+    margin-left: 166px;
+}
+
+.weather-plot-legend {
+    width: 166px;
+    height: 150px;
+    float: left;
+}

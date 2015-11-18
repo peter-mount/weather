@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    
+    <!-- Main home page -->
+    <definition name="forecast" extends="layout.main">
+        <put-attribute name="title" value="Maidstone Weather Forecast" />
+        <put-attribute name="body" value=".forecast" />
+        <put-attribute name="javascript" value="/common/jquery_flot.jsp" />
+    </definition>
+    
+    <definition name=".forecast" template="/common/forecast/home.jsp">
+        <put-attribute name="abstract" value="/common/about_abstract.jsp" />
+        <put-attribute name="text-forecast" value="/common/forecast/text.jsp" />
+        <put-attribute name="cloud-forecast" value=".forecast.cloud" />
+        <put-attribute name="sunrise" value="/common/space/sunrise/small.jsp" />
+        <put-attribute name="flood-alert" value="ea.floodalert.se" />
+    </definition>
+    
+    <!-- Tonight's clear sky forecast -->
+    <definition name=".forecast.cloud" template="/common/forecast/cloud.jsp">
+        <put-attribute name="cloud-2100" value=".forecast.cloud.2100" />
+        <put-attribute name="cloud-0000" value=".forecast.cloud.0000" />
+        <put-attribute name="cloud-0300" value=".forecast.cloud.0300" />
+    </definition>
+    
+    <definition name=".forecast.cloud.2100" template="/common/forecast/map1layer.jsp">
+        <put-attribute name="title" value="Cloud &amp; Rain Forecast: 21:00" />
+        <put-attribute name="layer" value="Total_Cloud_Cover_Precip_Rate_Overlaid" />
+    </definition>
+    
+    <definition name=".forecast.cloud.0000" template="/common/forecast/map1layer.jsp">
+        <put-attribute name="title" value="Cloud &amp; Rain Forecast: 00:00" />
+        <put-attribute name="layer" value="Total_Cloud_Cover_Precip_Rate_Overlaid" />
+    </definition>
+    
+    <definition name=".forecast.cloud.0300" template="/common/forecast/map1layer.jsp">
+        <put-attribute name="title" value="Cloud &amp; Rain Forecast: 03:00" />
+        <put-attribute name="layer" value="Total_Cloud_Cover_Precip_Rate_Overlaid" />
+    </definition>
+    
+</tiles-definitions>
