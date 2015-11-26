@@ -1,0 +1,102 @@
+<?xml version="1.0" ?><Layers type="Forecast">
+    <BaseUrl forServiceTimeFormat="Timesteps">http://datapoint.metoffice.gov.uk/public/data/layer/wxfcs/{LayerName}/{ImageFormat}?RUN={DefaultTime}Z&amp;FORECAST={Timestep}&amp;key={key}</BaseUrl>
+    <Layer displayName="Rainfall">
+        <Service name="UKPPBEST">
+            <LayerName>Precipitation_Rate</LayerName>
+            <ImageFormat>png</ImageFormat>
+            <Timesteps defaultTime="2015-11-25T09:00:00">
+                <Timestep>0</Timestep>
+                <Timestep>3</Timestep>
+                <Timestep>6</Timestep>
+                <Timestep>9</Timestep>
+                <Timestep>12</Timestep>
+                <Timestep>15</Timestep>
+                <Timestep>18</Timestep>
+                <Timestep>21</Timestep>
+                <Timestep>24</Timestep>
+                <Timestep>27</Timestep>
+                <Timestep>30</Timestep>
+                <Timestep>33</Timestep>
+                <Timestep>36</Timestep>
+            </Timesteps>
+        </Service>
+    </Layer>
+    <Layer displayName="Cloud">
+        <Service name="UKPPBEST">
+            <LayerName>Total_Cloud_Cover</LayerName>
+            <ImageFormat>png</ImageFormat>
+            <Timesteps defaultTime="2015-11-25T09:00:00">
+                <Timestep>0</Timestep>
+                <Timestep>3</Timestep>
+                <Timestep>6</Timestep>
+                <Timestep>9</Timestep>
+                <Timestep>12</Timestep>
+                <Timestep>15</Timestep>
+                <Timestep>18</Timestep>
+                <Timestep>21</Timestep>
+                <Timestep>24</Timestep>
+                <Timestep>27</Timestep>
+                <Timestep>30</Timestep>
+                <Timestep>33</Timestep>
+                <Timestep>36</Timestep>
+            </Timesteps>
+        </Service>
+    </Layer>
+    <Layer displayName="CloudAndRain">
+        <Service name="UKPPBEST">
+            <LayerName>Total_Cloud_Cover_Precip_Rate_Overlaid</LayerName>
+            <ImageFormat>png</ImageFormat>
+            <Timesteps defaultTime="2015-11-25T09:00:00">
+                <Timestep>0</Timestep>
+                <Timestep>3</Timestep>
+                <Timestep>6</Timestep>
+                <Timestep>9</Timestep>
+                <Timestep>12</Timestep>
+                <Timestep>15</Timestep>
+                <Timestep>18</Timestep>
+                <Timestep>21</Timestep>
+                <Timestep>24</Timestep>
+                <Timestep>27</Timestep>
+                <Timestep>30</Timestep>
+                <Timestep>33</Timestep>
+                <Timestep>36</Timestep>
+            </Timesteps>
+        </Service>
+    </Layer>
+    <Layer displayName="Temperature">
+        <Service name="UKPPBEST">
+            <LayerName>Temperature</LayerName>
+            <ImageFormat>png</ImageFormat>
+            <Timesteps defaultTime="2015-11-25T09:00:00">
+                <Timestep>0</Timestep>
+                <Timestep>3</Timestep>
+                <Timestep>6</Timestep>
+                <Timestep>9</Timestep>
+                <Timestep>12</Timestep>
+                <Timestep>15</Timestep>
+                <Timestep>18</Timestep>
+                <Timestep>21</Timestep>
+                <Timestep>24</Timestep>
+                <Timestep>27</Timestep>
+                <Timestep>30</Timestep>
+                <Timestep>33</Timestep>
+                <Timestep>36</Timestep>
+            </Timesteps>
+        </Service>
+    </Layer>
+    <Layer displayName="Pressure">
+        <Service name="FRONTS">
+            <LayerName>Atlantic</LayerName>
+            <ImageFormat>png</ImageFormat>
+            <Timesteps defaultTime="2015-11-25T00:00:00">
+                <Timestep>0</Timestep>
+                <Timestep>12</Timestep>
+                <Timestep>24</Timestep>
+                <Timestep>36</Timestep>
+                <Timestep>48</Timestep>
+                <Timestep>60</Timestep>
+                <Timestep>72</Timestep>
+            </Timesteps>
+        </Service>
+    </Layer>
+</Layers>
