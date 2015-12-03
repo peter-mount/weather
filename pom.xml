@@ -20,5 +20,7 @@
     </properties>
     <modules>
         <module>maidstoneweather</module>
+        <module>modp</module>
+        <module>piweather</module>
     </modules>
 </project>

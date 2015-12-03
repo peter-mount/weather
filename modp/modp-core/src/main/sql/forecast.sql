@@ -45,7 +45,7 @@ BEGIN
         BEGIN
             INSERT INTO modp.metfcst_layer
                 (layername,displayname,fmt,tm,steps,ts)
-                VALUES (playername,pdisplayname,pfmt,ptm,psteps,ptm::TIMESTAMP WITHOUT TIME ZONE)
+                VALUES (playername,pdisplayname,pfmt,ptm,psteps,ptm::TIMESTAMP WITHOUT TIME ZONE);
         EXCEPTION WHEN unique_violation THEN
             -- Do nothing, loop & try again
         END;

@@ -1,0 +1,119 @@
+/* 
+    Created on : May 26, 2014, 12:15:28 PM
+    Author     : Peter T Mount
+*/
+
+body {
+    font-family: Verdana,Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+.clearleft { clear: left; }
+.clearright { clear: right; }
+.center { text-align: center; }
+
+#main-outer {
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+#main-body {
+    background: #ccc;
+    margin: 1px;
+    background: #fff;
+    color: #000;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#main-content {
+    position: absolute;
+    left:0;
+    top: 7em;
+    bottom: 2.2em;
+    right: 0;
+}
+
+#col-left, #col-right {
+    width: 15em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+#col-left { left:0; }
+#col-right { right:0; }
+
+#col-2coll-center, #col-2colr-center, #col-3col-center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}
+#col-2coll-center { left:15em; }
+#col-2colr-center { right: 15em; }
+#col-3col-center { left:15em; right: 15em; }
+
+/* pre elements wrap to fit */
+pre {overflow-wrap: break-word;}
+
+/* Footer */
+
+#footer {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height: 1.3em;
+    background: #fff;
+    color: #000;
+}
+#footer-outer {
+    display: table;
+    table-layout: auto;
+    width: 100%;
+}
+#footer-inner {
+    display: table-row;
+    background: #fff;
+    color: #000;
+}
+#footer-left, #footer-center,#footer-right {
+    display: table-cell;
+    padding: 3px;
+}
+#footer-left {
+    text-align: left;
+    text-wrap: avoid;
+}
+#footer-center {
+    text-align: center;
+}
+#footer-right {
+    text-align: right;
+    text-wrap: avoid;
+}
+
+#footer-inner address {
+    text-align: center;
+}
+#footer-inner div {
+    font-size: 0.6em;
+    font-family: Arial,sans-serif;
+    border-top: 1px solid black;
+}
+
+#footer-inner div a {
+    margin-left: 2px;
+    margin-right: 3px;
+    color: #00f;
+}
+#footer-inner div a:visited { color: #00f; }
+#footer-inner div a:hover { color: #00f; }
