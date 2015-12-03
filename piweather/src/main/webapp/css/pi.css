@@ -61,6 +61,34 @@ body {
 #col-2colr-center { right: 15em; }
 #col-3col-center { left:15em; right: 15em; }
 
+.lefttable {
+    margin-left: 0.2em;
+    padding-bottom: 0.1em;
+}
+.lefttable caption {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 1em;
+    padding-bottom: 0.1em;
+}
+.lefttable tr {}
+.lefttable td {
+        text-align: left;
+    font-weight: normal;
+    font-size: 1em;
+}
+.lefttable td a {
+    text-decoration: none;
+    color: #000;
+}
+.lefttable td a:hover {
+    text-decoration: none;
+    color: #00F;
+}
+
+.lefttable th {}
+
 /* pre elements wrap to fit */
 pre {overflow-wrap: break-word;}
 

@@ -10,7 +10,7 @@
 <%@ taglib prefix="cms" uri="http://uktra.in/tld/cms" %>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 
-<cms:page page="LeftTop"/>
-<cms:page page="LeftCenter"/>
+<cms:page page="LeftTop" strip="true"/>
+<cms:page page="LeftCenter" strip="true"/>
 <tiles:insertAttribute name="ads"/>
-<cms:page page="LeftBottom"/>
+<cms:page page="LeftBottom" strip="true"/>
