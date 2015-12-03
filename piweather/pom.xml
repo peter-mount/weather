@@ -55,6 +55,13 @@
             <groupId>uk.trainwatch</groupId>
             <artifactId>opendata-core</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <exclusions>
+                <!-- Not certain why this is needed but the live tomcat failed with this in whilst UAT worked -->
+                <exclusion>
+                    <groupId>javax.enterprise</groupId>
+                    <artifactId>cdi-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
